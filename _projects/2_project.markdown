@@ -1,10 +1,10 @@
 ---
-layout: page
-title: project 2
-description: a project with a background image
-img: /assets/img/3.jpg
+layout: none
+title: CovidAI
+description: Automatic Covid19 detection using patient lung X-rays, implemented with ResNet152 transfer learning on a PyTorch framework
+img:
 importance: 2
-category: work
+category: research
 ---
 
 Every project has a beautiful feature showcase page.

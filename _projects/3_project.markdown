@@ -1,11 +1,11 @@
 ---
-layout: page
-title: project 3
-description: a project that redirects to another website
-img: /assets/img/7.jpg
-redirect: https://unsplash.com
+layout: none
+title: DecentralizedRL
+description: Decentralized temporal-difference reinforcement learning over randomly reshuffled topology
+img:
+redirect: https://github.com/ricky-ma/DecentralizedRL
 importance: 3
-category: work
+category: research
 ---
 
 Every project has a beautiful feature showcase page.

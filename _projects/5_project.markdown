@@ -1,10 +1,11 @@
 ---
-layout: page
-title: project 5
-description: a project with a background image
-img: /assets/img/1.jpg
+layout: none
+title: EpidemicMatrixCompletion
+description: Recovery and prediction of missing and incomplete epidemiological data using matrix completion and low-rank SVD
+redirect: https://github.com/ricky-ma/Epidemic-Matrix-Completion
+img: 
 importance: 3
-category: fun
+category: research
 ---
 
 Every project has a beautiful feature showcase page.

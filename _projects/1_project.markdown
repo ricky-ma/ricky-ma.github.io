@@ -1,10 +1,10 @@
 ---
-layout: page
-title: project 1
-description: a project with a background image
-img: /assets/img/12.jpg
+layout: none
+title: OddObjects
+description: Unsupervised anomaly detection on COCO-style masked objects, comparison of results using various state-of-the-art deep autoencoders
+img:
 importance: 1
-category: work
+category: research
 ---
 
 Every project has a beautiful feature showcase page.

@@ -1,10 +1,11 @@
 ---
-layout: page
-title: project 4
-description: another without an image
+layout: none
+title: ChatbotAnalytics
+description: Exploratory data analysis and interactive model-understanding and evaluation tool for chatbot training data and feedback
 img:
 importance: 3
-category: fun
+redirect: https://github.com/ricky-ma/ChatbotAnalytics
+category: work
 ---
 
 Every project has a beautiful feature showcase page.

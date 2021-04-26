@@ -1,10 +1,11 @@
 ---
-layout: page
-title: project 6
-description: a project with no image
+layout: none
+title: Pathfinder
+description: Search Strategy analysis and more for spatial navigation data in rodents
+redirect: https://github.com/MatthewBCooke/Pathfinder
 img:
 importance: 4
-category: fun
+category: research
 ---
 
 Every project has a beautiful feature showcase page.
