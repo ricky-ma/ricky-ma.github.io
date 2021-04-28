@@ -3,8 +3,8 @@ layout: none
 title: Pathfinder
 description: Search Strategy analysis and more for spatial navigation data in rodents
 redirect: https://github.com/MatthewBCooke/Pathfinder
-img:
-importance: 4
+img: assets/img/pathfinder.gif
+importance: 3
 category: research
 ---
 

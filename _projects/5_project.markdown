@@ -4,8 +4,8 @@ title: EpidemicMatrixCompletion
 description: Recovery and prediction of missing and incomplete epidemiological data using matrix completion and low-rank SVD
 redirect: https://github.com/ricky-ma/Epidemic-Matrix-Completion
 img: 
-importance: 3
-category: research
+importance: 5
+category: fun
 ---
 
 Every project has a beautiful feature showcase page.

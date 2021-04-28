@@ -2,9 +2,10 @@
 layout: none
 title: OddObjects
 description: Unsupervised anomaly detection on COCO-style masked objects, comparison of results using various state-of-the-art deep autoencoders
-img:
+img: assets/img/memcae.gif
 importance: 1
 category: research
+redirect: https://github.com/ricky-ma/ODDObjects/
 ---
 
 Every project has a beautiful feature showcase page.
