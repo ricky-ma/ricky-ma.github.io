@@ -164,6 +164,17 @@ a, table.table a {
   }
 }
 
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: var(--global-text-color);
+  //.tbody tr:hover {
+  //  background-color: var(--global-hover-color);
+  //}
+}
+//table tr:hover td{
+//  background-color: var(--global-hover-color);
+//}
 
 // News
 
