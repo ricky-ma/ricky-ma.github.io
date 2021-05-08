@@ -20,8 +20,8 @@ nav: true
   </thead>
   <tbody>
     <tr>
-      <th scope="row">Factfulness: Ten Reasons We're Wrong About the World--and Why Things Are Better Than You Think</th>
-      <td>Hans Rosling, with Anna Rosling Rönnlund and Ola Rosling</td>
+      <th scope="row">The Book of Why: The New Science of Cause and Effect</th>
+      <td>Dana Mackenzie and Judea Pearl</td>
     </tr>
     <tr>
       <th scope="row">Made to Stick</th>
@@ -30,10 +30,6 @@ nav: true
     <tr>
       <th scope="row">Discourses and Selected Writings</th>
       <td>Epictetus</td>
-    </tr>
-    <tr>
-      <th scope="row">The Book of Why: The New Science of Cause and Effect</th>
-      <td>Dana Mackenzie and Judea Pearl</td>
     </tr>
   </tbody>
 </table>
@@ -51,6 +47,10 @@ nav: true
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <th scope="row">Factfulness: Ten Reasons We're Wrong About the World--and Why Things Are Better Than You Think</th>
+      <td>Hans Rosling, with Anna Rosling Rönnlund and Ola Rosling</td>
+    </tr>
     <tr>
       <th scope="row">Waking, Dreaming, Being: Self and Consciousness in Neuroscience, Meditation, and Philosophy</th>
       <td>Evan Thompson</td>
