@@ -20,8 +20,12 @@ nav: true
   </thead>
   <tbody>
     <tr>
-      <th scope="row">The Book of Why: The New Science of Cause and Effect</th>
-      <td>Dana Mackenzie and Judea Pearl</td>
+      <th scope="row">Zero to One: Notes on Startups, or How to Build the Future</th>
+      <td>Blake Masters and Peter Thiel</td>
+    </tr>
+    <tr>
+      <th scope="row">Humans Need Not Apply: A Guide to Wealth and Work in the Age of Artificial Intelligence</th>
+      <td>Jerry Kaplan</td>
     </tr>
     <tr>
       <th scope="row">Made to Stick</th>
@@ -47,6 +51,10 @@ nav: true
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <th scope="row">The Book of Why: The New Science of Cause and Effect</th>
+      <td>Dana Mackenzie and Judea Pearl</td>
+    </tr>
     <tr>
       <th scope="row">Factfulness: Ten Reasons We're Wrong About the World--and Why Things Are Better Than You Think</th>
       <td>Hans Rosling, with Anna Rosling Rönnlund and Ola Rosling</td>
@@ -82,14 +90,6 @@ nav: true
     <tr>
       <th scope="row">Superintelligence: Paths, Dangers, Strategies</th>
       <td>Nick Bostrom</td>
-    </tr>
-    <tr>
-      <th scope="row">Zero to One: Notes on Startups, or How to Build the Future</th>
-      <td>Blake Masters and Peter Thiel</td>
-    </tr>
-    <tr>
-      <th scope="row">Humans Need Not Apply: A Guide to Wealth and Work in the Age of Artificial Intelligence</th>
-      <td>Jerry Kaplan</td>
     </tr>
     <tr>
       <th scope="row">Thinking, Fast and Slow</th>
