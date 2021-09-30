@@ -24,14 +24,6 @@ nav: true
       <td>Blake Masters and Peter Thiel</td>
     </tr>
     <tr>
-      <th scope="row">Humans Need Not Apply: A Guide to Wealth and Work in the Age of Artificial Intelligence</th>
-      <td>Jerry Kaplan</td>
-    </tr>
-    <tr>
-      <th scope="row">Made to Stick</th>
-      <td>Chip Heath & Dan Heath</td>
-    </tr>
-    <tr>
       <th scope="row">Discourses and Selected Writings</th>
       <td>Epictetus</td>
     </tr>
@@ -51,6 +43,14 @@ nav: true
     </tr>
   </thead>
   <tbody>
+        <tr>
+      <th scope="row">Humans Need Not Apply: A Guide to Wealth and Work in the Age of Artificial Intelligence</th>
+      <td>Jerry Kaplan</td>
+    </tr>
+    <tr>
+      <th scope="row">Made to Stick</th>
+      <td>Chip Heath & Dan Heath</td>
+    </tr>
     <tr>
       <th scope="row">The Book of Why: The New Science of Cause and Effect</th>
       <td>Dana Mackenzie and Judea Pearl</td>
