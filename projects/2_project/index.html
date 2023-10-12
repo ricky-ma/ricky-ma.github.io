@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>You R. Name | project 2</title>
+<title>Ricky  Ma | CovidAI</title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
 
@@ -23,15 +23,15 @@
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
 
 <!-- Code Syntax Highlighting -->
-<link rel="stylesheet" href="https://gitcdn.xyz/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+<link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
 
 <!-- Styles -->
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
 
-<link rel="stylesheet" href="/al-folio/assets/css/main.css">
+<link rel="stylesheet" href="/pages/ricky-ma/assets/css/main.css">
 
-<link rel="canonical" href="/al-folio/projects/2_project/">
+<link rel="canonical" href="/pages/ricky-ma/projects/2_project/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -40,11 +40,21 @@
 
 <!-- Theming-->
 
-  <script src="/al-folio/assets/js/theme.js"></script>
+  <script src="/pages/ricky-ma/assets/js/theme.js"></script>
   <!-- Load DarkMode JS -->
-<script src="/al-folio/assets/js/dark_mode.js"></script>
+<script src="/pages/ricky-ma/assets/js/dark_mode.js"></script>
 
 
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YH2L49BF7K"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-YH2L49BF7K');
+  </script>
 
 
 
@@ -74,8 +84,8 @@
     <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
     <div class="container">
       
-      <a class="navbar-brand title font-weight-lighter" href="/al-folio/">
-       <span class="font-weight-bold">You</span> R.  Name
+      <a class="navbar-brand title font-weight-lighter" href="https://github.com/pages/ricky-ma/">
+       <span class="font-weight-bold">Ricky</span>   Ma
       </a>
       
       <!-- Navbar Toggle -->
@@ -89,19 +99,19 @@
         <ul class="navbar-nav ml-auto flex-nowrap">
           <!-- About -->
           <li class="nav-item ">
-            <a class="nav-link" href="/al-folio/">
+            <a class="nav-link" href="/pages/ricky-ma/">
               about
               
             </a>
           </li>
           
           <!-- Blog -->
-          <li class="nav-item ">
-            <a class="nav-link" href="/al-folio/blog/">
-              blog
-              
-            </a>
-          </li>
+<!--          <li class="nav-item ">-->
+<!--            <a class="nav-link" href="/pages/ricky-ma/blog/">-->
+<!--              blog-->
+<!--              -->
+<!--            </a>-->
+<!--          </li>-->
           
           <!-- Other pages -->
           
@@ -118,7 +128,7 @@
           
           
           <li class="nav-item ">
-              <a class="nav-link" href="/al-folio/projects/">
+              <a class="nav-link" href="/pages/ricky-ma/projects/">
                 projects
                 
               </a>
@@ -127,7 +137,7 @@
           
           
           <li class="nav-item ">
-              <a class="nav-link" href="/al-folio/publications/">
+              <a class="nav-link" href="/pages/ricky-ma/publications/">
                 publications
                 
               </a>
@@ -136,8 +146,8 @@
           
           
           <li class="nav-item ">
-              <a class="nav-link" href="/al-folio/teaching/">
-                teaching
+              <a class="nav-link" href="/pages/ricky-ma/reading/">
+                reading list
                 
               </a>
           </li>
@@ -165,78 +175,44 @@
       <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">project 2</h1>
-    <p class="post-description">a project with a background image</p>
+    <h1 class="post-title">CovidAI</h1>
+    <p class="post-description">Automatic Covid19 detection using patient lung X-rays, implemented with ResNet152 transfer learning on a PyTorch framework</p>
   </header>
 
   <article>
-    <p>Every project has a beautiful feature showcase page.
-It’s easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.</p>
+    <p>Team members: Ricky Ma, Kaiwen Hu</p>
 
-<p>To give your project a background in the portfolio page, just add the img tag to the front matter like so:</p>
+<h2 id="introduction">Introduction</h2>
+<p>The COVID-19 X-ray classification problem is a binary classification problem using X-ray images of patients’ chests. Using these images, our goal is to train a machine learning model to determine whether a patient has COVID-19 or not. As the situation is still developing, the available public datasets of Covid-19-positive lung X-rays are limited. The provided dataset contains only 70 training images and 20 test images. With such a small dataset, traditional DNN or CNN approaches will not work. Hence, we approach this classification problem with transfer learning using various pretrained image classification models provided by Torchvision.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
-layout: page
-title: project
-description: a project with a background image
-img: /assets/img/12.jpg
----
-</code></pre></div></div>
+<h2 id="method">Method</h2>
+<p>With a relatively small dataset, we decided to use Transfer Learning rather than training a CNN from scratch. Transfer Learning uses preexisting CNN that has already been trained on relatively large amount of images. Torchvision, a package provided by PyTorch, contains various datasets, model architectures, and image transformations for computer vision and image classification. We used \textbf{various pretrained CNNs for fixed feature extractions} and then \textbf{fine-tuned the CNNs}.</p>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="/al-folio/assets/img/1.jpg" alt="" title="example image" />
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="/al-folio/assets/img/3.jpg" alt="" title="example image" />
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="/al-folio/assets/img/5.jpg" alt="" title="example image" />
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="/al-folio/assets/img/5.jpg" alt="" title="example image" />
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+<p>To use a CNN as fixed feature extractor, we take a CNN pretrained on a large dataset and remove the last fully connected layer. For example, applying transfer learning on ImageNet (a CNN containing 1.2 million images with 1000 classes), only the last fully connected layer is randomly initialized. This layer is the only one that is trained, and the remaining layers are kept as fixed parameters.</p>
 
-<p>You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, <em>bled</em> for your project, and then… you reveal it’s glory in the next row of images.</p>
+<p>Fine-tuning a CNN not only extracts the very last fully connected layer, but also fine-tunes the weights of the fixed layers via backpropagation. The motivation behind this is to set the parameters of the CNN to be more specific towards the task at hand. For example, a major proportion ImageNet’s data are images of dogs and their respective breeds, so the ImageNet’s weights could be more biased towards classifying between different dog breeds. To mitigate this effect, fine-tuning the CNN helps with training the model for our specific classification problem.</p>
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="/al-folio/assets/img/6.jpg" alt="" title="example image" />
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="/al-folio/assets/img/11.jpg" alt="" title="example image" />
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+<p>Hence, our approach to Covid-19 diagnosis via lung X-rays starts with a pretrained image classification CNN. The last fully connected layer is replaced with a new layer with randomized weights. The CNN is then fine-tuned by training it on our lung X-ray data using cross entropy loss and SGD with a step learning rate. The CNN is trained for a set number of epochs and the resulting model is used to predict the labels of the 20 test images.</p>
 
-<p>The code is simple.
-Just wrap your images with <code class="language-plaintext highlighter-rouge">&lt;div class="col-sm"&gt;</code> and place them inside <code class="language-plaintext highlighter-rouge">&lt;div class="row"&gt;</code> (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/" target="_blank">Bootstrap Grid</a> system).
-To make images responsive, add <code class="language-plaintext highlighter-rouge">img-fluid</code> class to each; for rounded corners and shadows use <code class="language-plaintext highlighter-rouge">rounded</code> and <code class="language-plaintext highlighter-rouge">z-depth-1</code> classes.
-Here’s the code for the last row of images above:</p>
+<h2 id="experiments">Experiments</h2>
+<p>A number of pretrained CNNs provided by torchvision were tested and compared. Out of AlexNet, VGG, DenseNet, and ResNet architectures, ResNet was the only model able to generate predictions that contained labels for both categories. All other CNN architectures predicted that all test images were Covid-19 negative. Out of ResNet architectures, ResNet152 achieved the highest score.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row justify-content-sm-center"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-8 mt-3 mt-md-0"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"img-fluid rounded z-depth-1"</span> <span class="na">src=</span><span class="s">"/al-folio/assets/img/6.jpg"</span> <span class="na">alt=</span><span class="s">""</span> <span class="na">title=</span><span class="s">"example image"</span><span class="nt">/&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-4 mt-3 mt-md-0"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"img-fluid rounded z-depth-1"</span> <span class="na">src=</span><span class="s">"/al-folio/assets/img/11.jpg"</span> <span class="na">alt=</span><span class="s">""</span> <span class="na">title=</span><span class="s">"example image"</span><span class="nt">/&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre></div></div>
+<p>To improve training performance, 20\% of the training data were used as a validation dataset, resulting in 56 training images and 14 validation images for each epoch. A validation split of 10\% resulted in little improvement to test accuracy, while a split of more than 20\% decreased training efficiency. The max number of epochs was set at 30, as validation loss plateaued around epoch 25.</p>
+
+<p>Stochastic gradient descent was picked for its relatively fast optimization speed. We included Nesterov momentum to accelerate the convergence on the minima. Step decay was also added to our SGD algorithm to improve model accuracy. Step sizes of 7 worked well, and were scheduled via PyTorch’s learning rate scheduler.</p>
+
+<h2 id="results">Results</h2>
+<p>| Model                             | Kaggle Score  |
+|:—|—:|
+| transfer learning using ResNet152 | 0.82352       |</p>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>There were number of teams that outperformed our result. This is probably because our model implemented Transfer Learning using naive approaches for fixed feature extractor and fine-tuning. Thus, our CNN may have been a suboptimal model for classifying whether a patient had COVID-19 or not through X-ray image recognition. We could have approached to solve the problem effectively if we had considered more carefully which weights of the layers to manipulate.</p>
+
+<p>Additionally, more time could have been spent on hyperparameter tuning instead of comparing the various architectures. In hindsight, we should have stuck with a ResNet model and focus more on adjusting learning rates, momentum, batch-sizes, epochs, and other hyperparameters. Different gradient descent optimization algorithms could have been tested, like Adadelta, RMSprop, or Adam. Nevertheless, in this specific setting, we thought as machine learning consultants. False positive results would not be penalized as much as false negative results.</p>
+
+<p>Through this binary image classification problem, we learned that CNNs used in the real world are seldom trained from scratch. It is not very practical for a variety of reasons - with the leading cause being datasets that are too small. Additionally, classification via transfer learning achieves sufficient, or even ideal, results with minimal time and effort. Thus, many open source packages are available for deep learning engineers to solve problems by transforming pre-existing CNN models to do the task at hand.</p>
+
 
   </article>
 
@@ -249,7 +225,7 @@ Here’s the code for the last row of images above:</p>
     
 <footer class="fixed-bottom">
   <div class="container mt-0">
-    &copy; Copyright 2021 You R. Name.
+    &copy; Copyright 2023 Ricky  Ma.
     Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 
     
@@ -270,14 +246,14 @@ Here’s the code for the last row of images above:</p>
 <!-- Mansory & imagesLoaded -->
 <script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-<script defer src="/al-folio/assets/js/mansory.js" type="text/javascript"></script>
+<script defer src="/pages/ricky-ma/assets/js/mansory.js" type="text/javascript"></script>
 
 
   
 
 
 <!-- Load Common JS -->
-<script src="/al-folio/assets/js/common.js"></script>
+<script src="/pages/ricky-ma/assets/js/common.js"></script>
 
 
 </html>
